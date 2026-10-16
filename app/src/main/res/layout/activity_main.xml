@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/window_root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="56dp"
+        app:contentInsetStart="@dimen/screen_gutter" app:contentInsetEnd="@dimen/screen_gutter"
+        app:titleTextColor="?attr/colorOnSurface" app:titleTextAppearance="@style/TextAppearance.Material3.TitleMedium" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/fragment_container"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation" android:layout_width="@dimen/navigation_width" android:layout_height="@dimen/navigation_height"
+        android:layout_gravity="center_horizontal" android:layout_marginHorizontal="16dp" android:layout_marginBottom="12dp"
+        android:minHeight="0dp" android:elevation="0dp"
+        android:background="@drawable/navigation_background" app:menu="@menu/main_navigation"
+        app:itemPaddingTop="4dp" app:itemPaddingBottom="12dp" app:itemIconSize="20dp"
+        app:itemTextAppearanceActive="@style/TextAppearance.Material3.LabelMedium"
+        app:itemTextAppearanceInactive="@style/TextAppearance.Material3.LabelMedium"
+        app:itemIconTint="?attr/colorPrimary" app:itemTextColor="?attr/colorPrimary" app:itemActiveIndicatorStyle="@style/Chemodan.NavigationIndicator" />
+</LinearLayout>

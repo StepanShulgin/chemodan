@@ -1,0 +1,4 @@
+<resources>
+    <item name="screen_list" type="id" />
+    <item name="fragment_container" type="id" />
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <attr name="colorHeroSurface" format="color" />
+    <attr name="colorHeroForeground" format="color" />
+</resources>
